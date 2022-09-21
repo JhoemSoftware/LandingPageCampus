@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+//import PrimeraApp from './PrimeraApp';
+//import CounterApp from './CounterApp';
+import PrinciplePage from './principle';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const divIndex = document.querySelector('#index');
+const index = createRoot(divIndex);
+index.render(<PrinciplePage nameDev="Jhon Alex Marín" programmingLang="React JS"/>);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+

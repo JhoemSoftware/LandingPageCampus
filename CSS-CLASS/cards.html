@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+        * {
+            font-family: 'Rubik', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #161623;
+        }
+        body::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#f00,#f0f);
+            clip-path: circle(30% at right 70%);
+        }
+        body::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#2196f3,#e91e63);
+            clip-path: circle(20% at 10% 10%);
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+        .container .card {
+            position: relative;
+            width: 280px;
+            height: 400px;
+            margin: 30px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, .1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, .5);
+            border-left: 1px solid rgba(255, 255, 255, .5);
+            backdrop-filter: blur(5px);
+        }
+        .container .card .content{
+            padding: 20px;
+            text-align: center;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: .5s ease-in-out;
+        }
+
+        .container .card:hover .content{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        .container .card .content h2{
+            position: absolute;
+            top: -25px;
+            right: 20px;
+            font-size: 8em;
+            color: rgba(255, 255, 255, .05);
+            pointer-events: none;
+        }
+        .container .card .content h3 {
+            font-size: 1.8em;
+            color: #fff;
+            z-index: 1;
+            text-transform: capitalize;
+            margin: 25px;
+        }
+        .container .card .content p {
+            font-size: 1em;
+            color: #fff;
+            font-weight: 300;
+            
+        }
+        .container .card .content a {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 15px;
+            background: #fff;
+            color: #000;
+            border-radius: 20px;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        img {
+            opacity: 5;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                
+                <h2>01</h2>
+                <h3>HTML</h3>
+                <p>
+                    <img src="./html.png" alt="">
+                </p>
+                <!--<a href="#">Leer más</a>-->
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>CSS</h3>
+                <p>
+                    <img src="./css.png" alt="">
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>JavaScript</h3>
+                <p>
+                    <img src="./js.png" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 10,
+            speed: 2800,
+            glare: true,
+            "max-glare" : 1
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>
