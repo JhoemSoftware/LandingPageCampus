@@ -1,8 +1,9 @@
-import PropTypes from 'prop-types' ;
+import PropTypes from 'prop-types';
 
-const PrinciplePage = ({nameDev,programmingLang}) => {
+const PrinciplePage = ({nameDev,programmingLang,imgReact,imgJhoem}) => {
     return (
         <>  
+            <img src={imgJhoem} className='logoImg' />
             <div className='titlePage'>
                 <h1> {nameDev} </h1>
             </div>
@@ -12,20 +13,14 @@ const PrinciplePage = ({nameDev,programmingLang}) => {
             <div className="container">
                 <div className="card">
                     <div className="content">
-                        <h2>01</h2>
+                    <img src={imgReact} />
                         <h3>Perfil</h3>
                     </div>
                 </div>
                 <div className="card">
                     <div className="content">
-                        <h2>02</h2>
+                        
                         <h3>GitHub</h3>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="content">
-                        <h2>03</h2>
-                        <h3>Projects</h3>
                     </div>
                 </div>
             </div>
@@ -34,8 +29,10 @@ const PrinciplePage = ({nameDev,programmingLang}) => {
 }
 
 PrinciplePage.propTypes = {
-    nameDev: PropTypes.string,
-    programmingLang: PropTypes.string
+    nameDev: PropTypes.string.isRequired,
+    programmingLang: PropTypes.string.isRequired,
+    imgReact: PropTypes.string.isRequired,
+    imgJhoem: PropTypes.string.isRequired
 }
 
 

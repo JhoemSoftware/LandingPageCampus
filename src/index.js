@@ -7,7 +7,12 @@ import './index.css';
 
 const divIndex = document.querySelector('#index');
 const index = createRoot(divIndex);
-index.render(<PrinciplePage nameDev="Jhon Alex Marín" programmingLang="React JS"/>);
+index.render(<PrinciplePage 
+                nameDev="Jhon Alex Marín" 
+                programmingLang="React JS" 
+                imgReact="./logo512.png" 
+                imgJhoem="./jhoem.jpg"
+            />);
 
 
 
