@@ -2,28 +2,28 @@ import PropTypes from 'prop-types';
 
 const PrinciplePage = ({nameDev,programmingLang,imgReact,imgJhoem}) => {
     return (
-        <>  
-            <img src={imgJhoem} className='logoImg' />
+        <>
+        <div className='container'>
+            <div className='logoImg'>
+                <img src={imgJhoem} />
+            </div>
             <div className='titlePage'>
                 <h1> {nameDev} </h1>
             </div>
             <div className='parrfPage'>
                 <p> Desarrollador web en {programmingLang} </p>
             </div>
-            <div className="container">
-                <div className="card">
-                    <div className="content">
-                    <img src={imgReact} />
-                        <h3>Perfil</h3>
-                    </div>
+        </div>
+        <div className='container'>
+            <div className='row justify-content-center'>
+                <div className='col-12 col-sm-4'>
+                    <a href='#' type='button' className='btn btn-primary'>perfil</a>
                 </div>
-                <div className="card">
-                    <div className="content">
-                        
-                        <h3>GitHub</h3>
-                    </div>
+                <div className='col-12 col-sm-4'>
+                    <a href='#' type='button' className='btn btn-primary'>git hub</a>
                 </div>
             </div>
+        </div>
         </>
     );
 }
