@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 const PerfilPage = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
     return (
         <>
-        <div className='container mt-5 perfil'>
+        <div className='container perfil'>
             <div className='row justify-content-center'>
-                <div className='col-12 col-sm-5 align-self-center'>
+                <div className='col-12 col-lg-5'>
                     <div className='cube'>
                         <div className='top'></div>
                         <div><span className='sideOne'> <img src={htmlLogo} /></span></div>
@@ -14,8 +14,8 @@ const PerfilPage = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
                         <div><span className='sideFour'> <img src={reactLogo} /></span></div>
                     </div>
                 </div>
-                <div className='col-12 col-sm-6 align-self-center textPerfil'>
-                    <h2 className='mb-3'>{company}</h2>
+                <div className='col-12 col-lg-6 align-self-center textPerfil'>
+                    <h2 className='mb-4'>{company}</h2>
                     <p>
                         Ubicados en la ciudad de Medellín CO. 
                         Desarrollamos aplicaciones web a la medida con 

@@ -23,13 +23,12 @@
 html { min-height: 100%; }
 
 body {
-    background: linear-gradient(to left, #13678A, #000 );
+    background: linear-gradient(to left, #13678A , #012030 , #000 );
     /*background: #012030;*/
     color: aliceblue;
     font-size: 1.1rem;
     font-family: sans-serif;
     letter-spacing: 2px;
-    padding-top: 4%;
     text-align: center;
 }
 /*
@@ -83,7 +82,7 @@ p { z-index: 1; }
     text-shadow: none;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 5% 10% 5% 10%;
     transition: all .5s ease-in-out;
 }
@@ -99,8 +98,7 @@ p { z-index: 1; }
     height: 200px;
     transform-style: preserve-3d;
     animation: animate 20s linear infinite;
-    margin-top: 13%;
-    margin-right: 60%;
+    margin-top: 25%;
 }
 .cube div{
     position: absolute;
@@ -149,7 +147,8 @@ p { z-index: 1; }
                 0 0 220px rgba(0,204,21,.6),
                 0 0 260px rgba(0,204,21,.9);
 }
-.textPerfil p { text-align: left; letter-spacing: 1px;}
+.perfil{ padding-top: 8%; padding-bottom: 5%;}
+.textPerfil p { text-align: left; letter-spacing: 1px; margin-top: 15px;}
 
 @keyframes animate {
     0% {
@@ -160,4 +159,87 @@ p { z-index: 1; }
     }
 }
 
+@media screen and (max-width: 991px) {
+	@media screen and (min-width: 760px) {
+        .textPerfil{ max-width: 90%; }
+        .perfil{ padding-top: 0; padding-bottom: 5%; }
+		.cube{
+            margin-left: 40%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15%;
+            margin-top: 10%;
+        }
+        .cube div span img {
+            width:  100px;
+            height: 100px;
+        }
+        .cube div span {
+            transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+        }
+        .top{
+            transform: rotateX(90deg) translateZ(75px);
+        }
+        .top::before{
+            width: 150px;
+            height: 150px;
+            transform: translateZ(-180px);
+        }
+	}
+}
+
+@media screen and (max-width: 760px) {
+	@media screen and (min-width: 430px) {
+        .textPerfil{ max-width: 90%; }
+        .perfil{ padding-top: 0; padding-bottom: 10%; }
+		.cube{
+            margin-left: 35%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15%;
+            margin-top: 15%;
+        }
+        .cube div span img {
+            width:  100px;
+            height: 100px;
+        }
+        .cube div span {
+            transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+        }
+        .top{
+            transform: rotateX(90deg) translateZ(75px);
+        }
+        .top::before{
+            width: 150px;
+            height: 150px;
+            transform: translateZ(-180px);
+        }
+	}
+}
+@media screen and (max-width: 430px){
+    .textPerfil{ max-width: 85%; }
+    .perfil{ padding-top: 8%; padding-bottom: 15%; }
+	.cube{
+        margin-left: 27%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30%;
+        margin-top: 10%;
+    }
+    .cube div span img {
+        width:  100px;
+        height: 100px;
+    }
+    .cube div span {
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    }
+    .top{
+        transform: rotateX(90deg) translateZ(75px);
+    }
+    .top::before{
+        width: 150px;
+        height: 150px;
+        transform: translateZ(-180px);
+    }
+}
 
