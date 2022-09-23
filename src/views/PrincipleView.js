@@ -16,12 +16,12 @@ const PrincipleView = ( {nameDev,programmingLang,company,imgJhoem} ) => {
                     <p> Desarrollador web en {programmingLang} </p>
                 </div>
             </div>
-            <div className='container mt-4'>
+            <div className='container mt-3'>
                 <div className='row justify-content-center'>
-                    <div className='col-10 col-sm-3 mb-3'>
+                    <div className='col-5 col-lg-2 mb-3'>
                         <a href='#perfil' type='button' className='btn btn-primary'>perfil</a>
                     </div>
-                    <div className='col-10 col-sm-3'>
+                    <div className='col-5 col-lg-2'>
                         <a href='https://github.com/JhoemSoftware/'  target='_blank' type='button' className='btn btn-primary'>git hub</a>
                     </div>
                 </div>

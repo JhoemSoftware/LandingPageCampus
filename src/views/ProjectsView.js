@@ -6,8 +6,8 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
         <div className='container'>
             <h2>Proyectos desarrollados</h2>
             <hr/>
-            <div className='row justify-content-between mt-5'>
-                <div className='col-4 col-lg-3 mb-3'>
+            <div className='row justify-content-center mt-5'>
+                <div className='col-7 col-lg-3 mb-3'>
                     <div className='card mb-3'>
                         <div className='row'>
                             <div className='card-body'>
@@ -24,7 +24,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
                         </div>
                     </div>
                 </div>
-                <div className='col-4 col-lg-3 mb-3'>
+                <div className='col-7 col-lg-3 mb-3'>
                     <div className='card mb-3'>
                         <div className='row'>
                             <div className='card-body'>
@@ -41,7 +41,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
                         </div>
                     </div>
                 </div>
-                <div className='col-4 col-lg-3 mb-3'>
+                <div className='col-7 col-lg-3 mb-3'>
                     <div className='card mb-3'>
                         <div className='row'>
                             <div className='card-body'>
@@ -58,7 +58,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
                         </div>
                     </div>
                 </div>
-                <div className='col-4 col-lg-3 mb-3'>
+                <div className='col-7 col-lg-3 mb-3'>
                     <div className='card mb-3'>
                         <div className='row'>
                             <div className='card-body'>

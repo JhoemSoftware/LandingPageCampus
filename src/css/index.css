@@ -70,7 +70,6 @@ p { z-index: 1; }
     text-transform: uppercase;
     border-radius: 40px;
     transition: all .5s ease-in-out;
-    padding-top: 3%;
 }
 
 /* Estilos Inicio */
@@ -105,7 +104,7 @@ p { z-index: 1; }
     width: 100%;
     height: 100%;
     background: #9AEBA3;
-    clip-path: circle(35.2% at 100% -20%);
+    clip-path: circle(35.2% at 100% -19%);
     z-index: -1;
 }
 
@@ -207,7 +206,7 @@ p { z-index: 1; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#13678A,#9AEBA3);
+    background: radial-gradient(#13678A,#9AEBA3);
     clip-path: circle(30% at 10% 50%);
     z-index: -1;
 }
@@ -272,30 +271,24 @@ p { z-index: 1; }
 #logoCampus{
     width: 100%;
     height: auto;
-    max-width: 650px;
+    max-width: 550px;
 }
 
 #logoReact{
-    width: 280px;
+    width: 260px;
     margin-bottom: 5px;
-    animation: rotate infinite 30s linear;
+    animation: rotate infinite 50s linear;
 }
 
 .imgSocial img{
     width: 70px;
 }
 
-
-
 /* Animaciones */
 
 @keyframes animate {
-    0% {
-        transform: rotateX(-30deg) rotateY(0deg);
-    }
-    100% {
-        transform: rotateX(-30deg) rotateY(360deg);
-    }
+    0% { transform: rotateX(-30deg) rotateY(0deg); }
+    100% { transform: rotateX(-30deg) rotateY(360deg); }
 }
 
 @keyframes rotate {
@@ -304,7 +297,6 @@ p { z-index: 1; }
 }
 
 /* Media Query */
-
 @media screen and (max-width: 991px) {
 	@media screen and (min-width: 760px) {
         .textPerfil{ max-width: 90%; }
@@ -363,14 +355,16 @@ p { z-index: 1; }
 	}
 }
 @media screen and (max-width: 430px){
-    .textPerfil{ max-width: 85%; }
-    .perfil{ padding-top: 8%; padding-bottom: 15%; }
+    #index { margin-top: 3%; width: 90%; margin-left: 5%; margin-bottom: 0; }
+    .textPerfil{ max-width: 80%; }
+    .btn-primary{ padding-top: 8px; }
+    #index h1, #index p, #index h4{ text-shadow: 2px 1.2px #000; }
 	.cube{
         margin-left: 27%;
         width: 150px;
         height: 150px;
-        margin-bottom: 30%;
-        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
     .cube div span img {
         width:  100px;
@@ -387,9 +381,28 @@ p { z-index: 1; }
         height: 150px;
         transform: translateZ(-180px);
     }
+    #perfil .btn-primary { padding-top: 8px; }
     .card img{
         width: 150px;
         height: 100px;
+    }
+    #perfil::before{
+        clip-path: circle(35.2% at 100% -19.5%);
+    }
+
+    #proyectos::before{
+        clip-path: circle(55% at 30% 50%);
+    }
+
+    #formacion::before{
+        background: radial-gradient( #13678A, #9AEBA3 ); 
+        clip-path: circle(45% at 110% 50%);
+    }
+    
+    #formacion h4 {text-shadow: 2px 1px #000; font-size: 18px;}
+
+    #logoReact{
+        width: 100px;
     }
 }
 
