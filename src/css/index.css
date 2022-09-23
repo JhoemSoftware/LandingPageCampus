@@ -255,19 +255,8 @@ p { z-index: 1; }
 }
 
 /* Estilos Formacion */
-/*
-#formacion::before{
-    content: '';
-    position: absolute;
-    top: 60;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#13678A,#9AEBA3);
-    clip-path: circle(25% at left 70%);
-    z-index: -1;
-}
-*/
+#formacion{ padding-bottom: 0; }
+
 #formacion::before{
     content: '';
     position: absolute;
@@ -276,7 +265,7 @@ p { z-index: 1; }
     width: 100%;
     height: 100%;
     background: linear-gradient(#DAFDBA,#45C4B0);
-    clip-path: circle(15% at 100% 50%);
+    clip-path: circle(20% at 100% 50%);
     z-index: -1;
 }
 
@@ -284,6 +273,16 @@ p { z-index: 1; }
     width: 100%;
     height: auto;
     max-width: 650px;
+}
+
+#logoReact{
+    width: 280px;
+    margin-bottom: 5px;
+    animation: rotate infinite 30s linear;
+}
+
+.imgSocial img{
+    width: 70px;
 }
 
 
@@ -297,6 +296,11 @@ p { z-index: 1; }
     100% {
         transform: rotateX(-30deg) rotateY(360deg);
     }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* Media Query */

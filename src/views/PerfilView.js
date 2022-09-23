@@ -16,6 +16,7 @@ const PerfilView = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
                 </div>
                 <div className='col-12 col-lg-6 align-self-center textPerfil pt-5'>
                     <h2 className='mb-4'>{company}</h2>
+                    <hr/>
                     <p>
                         Ubicados en la ciudad de Medellín CO. 
                         Desarrollamos aplicaciones web a la medida con 

@@ -47,6 +47,10 @@ const formacion = createRoot(divFormacion);
 formacion.render(
             <EducationPage
                 imgCampus='./campus.png'
+                imgReact='./react.png'
+                imgTwtt='./twtt.png'
+                imgWp='./wp.png'
+                imgGitH='./gitH.png'
             />
 );
 

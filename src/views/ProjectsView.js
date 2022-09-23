@@ -5,6 +5,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
         <>
         <div className='container'>
             <h2>Proyectos desarrollados</h2>
+            <hr/>
             <div className='row justify-content-between mt-5'>
                 <div className='col-4 col-lg-3 mb-3'>
                     <div className='card mb-3'>
@@ -29,7 +30,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
                             <div className='card-body'>
                                 <img src={imgBlackJack} className='img-fluid rounded-start'/>
                                 <h3 className='card-title'>BlakcJack</h3>
-                                <p className='card-text'>Proyecto réplica de Trello</p>
+                                <p className='card-text'>Un pequqeño juego de cartas</p>
                                 <div className='container'>
                                     <div className='row justify-content-around'>
                                         <div className='col-7 col-sm-5 btn btn-primary mb-3' type='button'><a href='https://jhoemsoftware.com/BlackJack/' target='_blank'><img src={imgView} /></a></div>
@@ -46,7 +47,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
                             <div className='card-body'>
                                 <img src={imgClima} className='img-fluid rounded-start'/>
                                 <h3 className='card-title'>Clima</h3>
-                                <p className='card-text'>Proyecto réplica de Trello</p>
+                                <p className='card-text'>API para el clima de las ciudades del mundo</p>
                                 <div className='container'>
                                     <div className='row justify-content-around'>
                                         <div className='col-7 col-sm-5 btn btn-primary mb-3' type='button'><a href='https://jhoemsoftware.com/ApiFetch/' target='_blank'><img src={imgView} /></a></div>
@@ -63,7 +64,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
                             <div className='card-body'>
                                 <img src={imgMusic} className='img-fluid rounded-start'/>
                                 <h3 className='card-title'>Músicos</h3>
-                                <p className='card-text'>Proyecto réplica de Trello</p>
+                                <p className='card-text'>Un listado con los Rocker's de los 60's</p>
                                 <div className='container'>
                                     <div className='row justify-content-around'>
                                         <div className='col-7 col-sm-5 btn btn-primary mb-3' type='button'><a href='https://jhoemsoftware.com/Mentoria/' target='_blank'><img src={imgView} /></a></div>
