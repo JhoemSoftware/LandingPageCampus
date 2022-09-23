@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-const PerfilPage = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
+const PerfilView = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
     return (
         <>
-        <div className='container perfil'>
+        <div className='container'>
             <div className='row justify-content-center'>
                 <div className='col-12 col-lg-5'>
                     <div className='cube'>
@@ -26,7 +26,7 @@ const PerfilPage = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
                         TypeScript, Node JS, React JS, Vue JS, Angular, PHP, Laravel, 
                         Yii Framework, Codeigniter, Java, ASP .NET C# <br/>Bases de datos SQL & NO-SQL
                     </p>
-                    <a href='#' type='button' className='btn btn-primary mt-3'>Proyectos</a>
+                    <a href='#proyectos' type='button' className='btn btn-primary mt-3'>Proyectos</a>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@ const PerfilPage = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
     );
 }
 
-PerfilPage.propTypes = {
+PerfilView.propTypes = {
     reactLogo: PropTypes.string.isRequired,
     htmlLogo: PropTypes.string.isRequired,
     cssLogo: PropTypes.string.isRequired,
@@ -42,4 +42,4 @@ PerfilPage.propTypes = {
     company: PropTypes.string.isRequired
 }
 
-export default PerfilPage;
+export default PerfilView;

@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 
-const PrinciplePage = ( {nameDev,programmingLang,company,imgJhoem} ) => {
+const PrincipleView = ( {nameDev,programmingLang,company,imgJhoem} ) => {
     return (
         <>
-        <div className='inicioPage'>
             <div className='container'>
                 <div className='logoImg'>
                     <img src={imgJhoem} />
@@ -20,19 +19,18 @@ const PrinciplePage = ( {nameDev,programmingLang,company,imgJhoem} ) => {
             <div className='container mt-4'>
                 <div className='row justify-content-center'>
                     <div className='col-10 col-sm-3 mb-3'>
-                        <a href='.perfil' type='button' className='btn btn-primary'>perfil</a>
+                        <a href='#perfil' type='button' className='btn btn-primary'>perfil</a>
                     </div>
                     <div className='col-10 col-sm-3'>
                         <a href='https://github.com/JhoemSoftware/' type='button' className='btn btn-primary'>git hub</a>
                     </div>
                 </div>
             </div>
-        </div>
         </>
     );
 }
 
-PrinciplePage.propTypes = {
+PrincipleView.propTypes = {
     nameDev: PropTypes.string.isRequired,
     programmingLang: PropTypes.string.isRequired,
     company: PropTypes.string.isRequired,
@@ -40,4 +38,4 @@ PrinciplePage.propTypes = {
 }
 
 
-export default PrinciplePage;
+export default PrincipleView;
