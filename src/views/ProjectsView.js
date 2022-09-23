@@ -4,7 +4,7 @@ const PerfilView = ({imgKanban,imgBlackJack,imgClima,imgMusic,imgView,imgGit}) =
     return (
         <>
         <div className='container'>
-            <h1>Projectos desarrollados</h1>
+            <h2>Proyectos desarrollados</h2>
             <div className='row justify-content-between mt-5'>
                 <div className='col-4 col-lg-3 mb-3'>
                     <div className='card mb-3'>

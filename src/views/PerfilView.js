@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const PerfilView = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
     return (
         <>
-        <div className='container'>
+        <div className='container pt-5 pb-5'>
             <div className='row justify-content-center'>
                 <div className='col-12 col-lg-5'>
                     <div className='cube'>
@@ -14,7 +14,7 @@ const PerfilView = ( {reactLogo,htmlLogo,cssLogo,jsLogo,company} ) => {
                         <div><span className='sideFour'> <img src={reactLogo} /></span></div>
                     </div>
                 </div>
-                <div className='col-12 col-lg-6 align-self-center textPerfil'>
+                <div className='col-12 col-lg-6 align-self-center textPerfil pt-5'>
                     <h2 className='mb-4'>{company}</h2>
                     <p>
                         Ubicados en la ciudad de Medellín CO. 

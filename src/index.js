@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import PrincipleView from './views/PrincipleView';
 import PerfilView from './views/PerfilView';
 import ProjectsView from './views/ProjectsView';
+import EducationPage from './views/EducationPage';
 import './css/index.css';
 
 const divIndex = document.querySelector('#index');
@@ -41,6 +42,13 @@ proyectos.render(
             />
 );
 
+const divFormacion = document.querySelector('#formacion');
+const formacion = createRoot(divFormacion);
+formacion.render(
+            <EducationPage
+                imgCampus='./campus.png'
+            />
+);
 
 
 

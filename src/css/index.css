@@ -74,7 +74,7 @@ p { z-index: 1; }
 }
 
 /* Estilos Inicio */
-#index { margin-top: 5%; margin-bottom: 10%; }
+#index { margin-top: 5%; margin-bottom: 3%; }
 
 .logoImg img{
     width: 100%;
@@ -91,12 +91,22 @@ p { z-index: 1; }
 .logoImg img:hover{ filter: grayscale(.1); }
 
 /* Estilos Perfil */
-#perfil{ padding-top: 10%; padding-bottom: 10%;}
-
-#perfil h2 { color: #fff; }
+#perfil h2, #perfil p { text-shadow: 2px 1px #000; }
 
 #perfil .btn-primary {
-    padding-top: 2%;
+    padding-top: 1.5%;
+}
+
+#perfil::before{
+    content: '';
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9AEBA3;
+    clip-path: circle(35.2% at 100% -20%);
+    z-index: -1;
 }
 
 .sideOne{ --i:0; }
@@ -173,25 +183,47 @@ p { z-index: 1; }
 /* Estilos Proyectos */
 #proyectos {
     padding-top: 3.5%;
-    padding-bottom: 5%;
-    color: #000;
     text-shadow: 2px 1.3px #45C4B0;
 }
-#proyectos h1,h2,h3{
-    color: #012030 ;
-    text-shadow: none;
+
+#proyectos h1,h2,h3{ text-shadow: none; }
+
+#proyectos::before{
+    content: '';
+    position: absolute;
+    top: 90;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #DAFDBA;
+    clip-path: circle(20% at 100% 95%);
+    z-index: -1;
 }
+
+#proyectos::before{
+    content: '';
+    position: absolute;
+    top: 150;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#13678A,#9AEBA3);
+    clip-path: circle(30% at 10% 50%);
+    z-index: -1;
+}
+
 .card{
-    background: transparent;
+    background: #DAFDBA; 
     padding: 2%;
     border: none;
     border-radius: 20px;
     box-shadow: 1px 1px 25px 1px #000;
     transition: all .5s ease-in-out;
+    color: #012030;
 }
 
 .card:hover{
-    background: #9AEBA3
+    background: #45C4B0 ;
 }
 
 .card img{
@@ -221,6 +253,40 @@ p { z-index: 1; }
     height: 30px;
     border: none;
 }
+
+/* Estilos Formacion */
+/*
+#formacion::before{
+    content: '';
+    position: absolute;
+    top: 60;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#13678A,#9AEBA3);
+    clip-path: circle(25% at left 70%);
+    z-index: -1;
+}
+*/
+#formacion::before{
+    content: '';
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#DAFDBA,#45C4B0);
+    clip-path: circle(15% at 100% 50%);
+    z-index: -1;
+}
+
+#logoCampus{
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+}
+
+
 
 /* Animaciones */
 
