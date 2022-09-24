@@ -1,14 +1,5 @@
-/*
-    Paleta de Colores
-
-    #012030
-    #13678A
-    #45C4B0
-    #9AEBA3
-    #DAFDBA
-
-*/
-/* Estilos Generales e importaciones */
+/* Paleta de Colores:  #012030 #13678A #45C4B0 #9AEBA3 #DAFDBA */
+/********************************* Estilos Generales e importaciones *********************************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     margin: 0;
@@ -17,8 +8,6 @@
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 5px;
 }
-
-html { min-height: 100%; }
 
 body {
     background: linear-gradient(to left, #13678A , #012030 , #000 );
@@ -30,29 +19,7 @@ body {
     padding-top: 3%;
 }
 
-body::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#13678A,#9AEBA3);
-    clip-path: circle(35% at right 80%);
-    z-index: -1;
-}
-
-body::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#DAFDBA,#45C4B0);
-    clip-path: circle(20% at 10% 10%);
-    z-index: -1;
-}
+html { min-height: 100%; }
 
 h1, h2, h3 { z-index: 1; text-transform: uppercase; font-weight: bold; }
 
@@ -72,8 +39,32 @@ p { z-index: 1; }
     transition: all .5s ease-in-out;
 }
 
-/* Estilos Inicio */
+/********************************* Estilos Inicio *********************************/
 #index { margin-top: 5%; margin-bottom: 3%; }
+
+#index::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#13678A,#9AEBA3);
+    clip-path: circle(35% at right 20%);
+    z-index: -1;
+}
+
+#index::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#DAFDBA,#45C4B0);
+    clip-path: circle(20% at 10% 60%);
+    z-index: -1;
+}
 
 .logoImg img{
     width: 100%;
@@ -89,24 +80,10 @@ p { z-index: 1; }
 
 .logoImg img:hover{ filter: grayscale(.1); }
 
-/* Estilos Perfil */
+/********************************* Estilos Perfil *********************************/
 #perfil h2, #perfil p { text-shadow: 2px 1px #000; }
 
-#perfil .btn-primary {
-    padding-top: 1.5%;
-}
-
-#perfil::before{
-    content: '';
-    position: absolute;
-    top: 50;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #9AEBA3;
-    clip-path: circle(35.2% at 100% -19%);
-    z-index: -1;
-}
+#perfil .btn-primary { padding-top: 1.5%; }
 
 .sideOne{ --i:0; }
 
@@ -179,13 +156,10 @@ p { z-index: 1; }
 
 .textPerfil p { text-align: left; letter-spacing: 1px; margin-top: 15px;}
 
-/* Estilos Proyectos */
-#proyectos {
-    padding-top: 3.5%;
-    text-shadow: 2px 1.3px #45C4B0;
-}
+/********************************* Estilos Proyectos *********************************/
+#proyectos { padding-top: 3.5%; text-shadow: 2px 1.3px #45C4B0; }
 
-#proyectos h1,h2,h3{ text-shadow: none; }
+#proyectos h1, h2, h3{ text-shadow: none; }
 
 #proyectos::before{
     content: '';
@@ -221,9 +195,7 @@ p { z-index: 1; }
     color: #012030;
 }
 
-.card:hover{
-    background: #45C4B0 ;
-}
+.card:hover{ background: #45C4B0; }
 
 .card img{
     height: 220px;
@@ -247,13 +219,9 @@ p { z-index: 1; }
     padding-top: 5px;
 }
 
-.card .btn-primary img {
-    width: 30px;
-    height: 30px;
-    border: none;
-}
+.card .btn-primary img { width: 30px; height: 30px; border: none; }
 
-/* Estilos Formacion */
+/********************************* Estilos Formacion *********************************/
 #formacion{ padding-bottom: 0; }
 
 #formacion::before{
@@ -268,24 +236,13 @@ p { z-index: 1; }
     z-index: -1;
 }
 
-#logoCampus{
-    width: 100%;
-    height: auto;
-    max-width: 550px;
-}
+#logoCampus{ width: 100%; height: auto; max-width: 550px; }
 
-#logoReact{
-    width: 260px;
-    margin-bottom: 5px;
-    animation: rotate infinite 50s linear;
-}
+#logoReact{ width: 260px; margin-bottom: 5px; animation: rotate infinite 50s linear; }
 
-.imgSocial img{
-    width: 70px;
-}
+.imgSocial img{ width: 70px; }
 
-/* Animaciones */
-
+/********************************* Animaciones *********************************/
 @keyframes animate {
     0% { transform: rotateX(-30deg) rotateY(0deg); }
     100% { transform: rotateX(-30deg) rotateY(360deg); }
@@ -296,7 +253,7 @@ p { z-index: 1; }
     to { transform: rotate(360deg); }
 }
 
-/* Media Query */
+/********************************* Media Query *********************************/
 @media screen and (max-width: 991px) {
 	@media screen and (min-width: 760px) {
         .textPerfil{ max-width: 90%; }
@@ -308,21 +265,10 @@ p { z-index: 1; }
             margin-bottom: 15%;
             margin-top: 10%;
         }
-        .cube div span img {
-            width:  100px;
-            height: 100px;
-        }
-        .cube div span {
-            transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
-        }
-        .top{
-            transform: rotateX(90deg) translateZ(75px);
-        }
-        .top::before{
-            width: 150px;
-            height: 150px;
-            transform: translateZ(-180px);
-        }
+        .cube div span img { width:  100px; height: 100px; }
+        .cube div span { transform: rotateY(calc(90deg * var(--i))) translateZ(75px); }
+        .top{ transform: rotateX(90deg) translateZ(75px); }
+        .top::before{ width: 150px; height: 150px; transform: translateZ(-180px); }
 	}
 }
 
@@ -337,23 +283,13 @@ p { z-index: 1; }
             margin-bottom: 15%;
             margin-top: 15%;
         }
-        .cube div span img {
-            width:  100px;
-            height: 100px;
-        }
-        .cube div span {
-            transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
-        }
-        .top{
-            transform: rotateX(90deg) translateZ(75px);
-        }
-        .top::before{
-            width: 150px;
-            height: 150px;
-            transform: translateZ(-180px);
-        }
+        .cube div span img { width: 100px; height: 100px; }
+        .cube div span { transform: rotateY(calc(90deg * var(--i))) translateZ(75px); }
+        .top{ transform: rotateX(90deg) translateZ(75px); }
+        .top::before{ width: 150px; height: 150px; transform: translateZ(-180px); }
 	}
 }
+
 @media screen and (max-width: 430px){
     #index { margin-top: 3%; width: 90%; margin-left: 5%; margin-bottom: 0; }
     .textPerfil{ max-width: 80%; }
@@ -366,43 +302,16 @@ p { z-index: 1; }
         margin-bottom: 5%;
         margin-top: 5%;
     }
-    .cube div span img {
-        width:  100px;
-        height: 100px;
-    }
-    .cube div span {
-        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
-    }
-    .top{
-        transform: rotateX(90deg) translateZ(75px);
-    }
-    .top::before{
-        width: 150px;
-        height: 150px;
-        transform: translateZ(-180px);
-    }
+    .cube div span img { width:  100px; height: 100px; }
+    .cube div span { transform: rotateY(calc(90deg * var(--i))) translateZ(75px); }
+    .top{ transform: rotateX(90deg) translateZ(75px); }
+    .top::before{ width: 150px; height: 150px; transform: translateZ(-180px); }
     #perfil .btn-primary { padding-top: 8px; }
-    .card img{
-        width: 150px;
-        height: 100px;
-    }
-    #perfil::before{
-        clip-path: circle(35.2% at 100% -19.5%);
-    }
-
-    #proyectos::before{
-        clip-path: circle(55% at 30% 50%);
-    }
-
-    #formacion::before{
-        background: radial-gradient( #13678A, #9AEBA3 ); 
-        clip-path: circle(45% at 110% 50%);
-    }
-    
+    .card img{ width: 150px; height: 100px; }
+    #perfil::before{ clip-path: circle(35.2% at 100% -19.5%); }
+    #proyectos::before{ clip-path: circle(55% at 30% 50%); }
+    #formacion::before{ background: radial-gradient( #13678A, #9AEBA3 ); clip-path: circle(45% at 110% 50%); }
     #formacion h4 {text-shadow: 2px 1px #000; font-size: 18px;}
-
-    #logoReact{
-        width: 100px;
-    }
+    #logoReact{ width: 100px; }
 }
 

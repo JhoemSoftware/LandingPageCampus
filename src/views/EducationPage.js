@@ -14,7 +14,7 @@ const EducationPage = ( {imgCampus,imgReact,imgTwtt,imgWp,imgGitH} ) => {
                         <h4>Diplomado Front-end web con React JS 2022</h4>
                         <img src={imgCampus} id='logoCampus' />
                     </div>
-                    <div className='col-12 mt-5'>
+                    <div className='col-12 mt-5 mb-5'>
                         <p className='mt-5'>Contacto</p>
                         <div className='row justify-content-center'>
                             <div className='col-3 col-lg-1 imgSocial'>

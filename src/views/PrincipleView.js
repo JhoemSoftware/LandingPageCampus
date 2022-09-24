@@ -22,7 +22,7 @@ const PrincipleView = ( {nameDev,programmingLang,company,imgJhoem} ) => {
                         <a href='#perfil' type='button' className='btn btn-primary'>perfil</a>
                     </div>
                     <div className='col-5 col-lg-2'>
-                        <a href='https://github.com/JhoemSoftware/'  target='_blank' type='button' className='btn btn-primary'>git hub</a>
+                        <a href='https://github.com/JhoemSoftware/'  target='_blank' type='button' className='btn btn-primary'>github</a>
                     </div>
                 </div>
             </div>
