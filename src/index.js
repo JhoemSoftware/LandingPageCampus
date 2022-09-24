@@ -13,7 +13,7 @@ index.render(
                 nameDev='Jhon Alex Marín' 
                 programmingLang='React JS' 
                 company='Jhoem Software' 
-                imgJhoem='./jhoem.jpg'
+                imgJhoem='./assets/jhoem.jpg'
             />           
 );
 
@@ -21,10 +21,10 @@ const divPerfil = document.querySelector('#perfil');
 const perfil = createRoot(divPerfil);
 perfil.render(          
             <PerfilView
-                reactLogo='./react.png'
-                htmlLogo='./html.png'
-                cssLogo='./css.png'
-                jsLogo='./js.png'
+                reactLogo='./assets/react.png'
+                htmlLogo='./assets/html.png'
+                cssLogo='./assets/css.png'
+                jsLogo='./assets/js.png'
                 company='Jhoem Software'
             />
 );
@@ -33,12 +33,12 @@ const divProyectos = document.querySelector('#proyectos');
 const proyectos = createRoot(divProyectos);
 proyectos.render(
             <ProjectsView
-                imgKanban='./kanban.png'
-                imgBlackJack='./blackjack.png'
-                imgClima='./api.png'
-                imgMusic='./mentoria.png'
-                imgView='./view.png'
-                imgGit='./git.png'
+                imgKanban='./assets/kanban.png'
+                imgBlackJack='./assets/blackjack.png'
+                imgClima='./assets/api.png'
+                imgMusic='./assets/mentoria.png'
+                imgView='./assets/view.png'
+                imgGit='./assets/git.png'
             />
 );
 
@@ -46,11 +46,11 @@ const divFormacion = document.querySelector('#formacion');
 const formacion = createRoot(divFormacion);
 formacion.render(
             <EducationPage
-                imgCampus='./campus.png'
-                imgReact='./react.png'
-                imgTwtt='./twtt.png'
-                imgWp='./wp.png'
-                imgGitH='./gitH.png'
+                imgCampus='./assets/campus.png'
+                imgReact='./assets/react.png'
+                imgTwtt='./assets/twtt.png'
+                imgWp='./assets/wp.png'
+                imgGitH='./assets/gitH.png'
             />
 );
 

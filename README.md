@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F374972.png&f=1&nofb=1" style="width: 200px;">
+		<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png" style="width: 200px;">
 		<h1>Landing Page • Jhoem Software</h1>
 		<h3>Diplomado front-end React JS • Campus FIMLM</h3>
 	</div>

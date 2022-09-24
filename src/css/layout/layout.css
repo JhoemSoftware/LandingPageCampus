@@ -1,0 +1,66 @@
+/********************************* 
+    Paleta de Colores
+
+    #012030
+    #13678A
+    #45C4B0
+    #9AEBA3
+    #DAFDBA 
+
+    • Personalizados
+    
+    rgba(0,204,21,.9)
+    rgba(0,204,21,.2)
+
+*********************************/
+
+/********************************* Estilos Generales e importaciones *********************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+}
+
+body {
+    background: linear-gradient(to left, #13678A , #012030 , #000 );
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+html { min-height: 100%; }
+
+h1, h2, h3 { z-index: 1; text-transform: uppercase; font-weight: bold; }
+
+hr{ width: 60%; margin-left: 20%; }
+
+p { z-index: 1; }
+
+.btn-primary {
+    background: linear-gradient(#DAFDBA,#13678A);
+    border: none;
+    letter-spacing: 1px;
+    color: #000;
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes animate {
+    0% { transform: rotateX(-30deg) rotateY(0deg); }
+    100% { transform: rotateX(-30deg) rotateY(360deg); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

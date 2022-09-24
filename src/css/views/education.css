@@ -1,0 +1,19 @@
+#formacion{ padding-bottom: 0; }
+
+#formacion::before{
+    content: '';
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#DAFDBA,#45C4B0);
+    clip-path: circle(20% at 100% 50%);
+    z-index: -1;
+}
+
+#logoCampus{ width: 100%; height: auto; max-width: 550px; }
+
+#logoReact{ width: 260px; margin-bottom: 5px; animation: rotate infinite 50s linear; }
+
+.imgSocial img{ width: 70px; }

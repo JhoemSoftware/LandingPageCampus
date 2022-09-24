@@ -1,0 +1,74 @@
+#perfil h2, #perfil p { text-shadow: 2px 1px #000; }
+
+#perfil .btn-primary { padding-top: 1.5%; }
+
+.sideOne{ --i:0; }
+
+.sideTwo{ --i:1; }
+
+.sideThre{ --i:2; }
+
+.sideFour{ --i:3; }
+
+.cube{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    margin-top: 25%;
+}
+
+.cube div{
+    position: absolute;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#DAFDBA,rgba(0,204,21,.9),rgba(0,204,21,.2));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+}
+
+.cube div span img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    filter: saturate(3);
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #DAFDBA;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.top::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #DAFDBA;
+    transform: translateZ(-260px);
+    filter: blur(30px);
+    box-shadow: 0 0 60px rgba(0,204,21,.1),
+                0 0 180px rgba(0,204,21,.3),
+                0 0 220px rgba(0,204,21,.6),
+                0 0 260px rgba(0,204,21,.9);
+}
+
+.textPerfil p { text-align: left; letter-spacing: 1px; margin-top: 15px;}
